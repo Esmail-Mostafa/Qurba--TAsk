@@ -1,0 +1,95 @@
+<div>
+  <!-- shared Nvbar -->
+  <app-navbar
+    [cartNumber]="cart"
+    (SeacrchResalit)="SeachValue($event)"
+  ></app-navbar>
+</div>
+<div class="Title">
+  <h3>{{ title }}</h3>
+  <h4>Home / Products / {{ title }}</h4>
+</div>
+<div style="display: flex" class="body">
+  <div class="">
+    <app-sidebar (slectedCAtegory)="getCategotysbyName($event)"></app-sidebar>
+  </div>
+
+  <main class="parint">
+    <div class="cardBody" *ngFor="let item of prodectList">
+      <div class="discountPercentage">-{{ item.discountPercentage }}</div>
+      <img
+        src="{{ item.thumbnail }}"
+        alt=""
+        srcset=""
+        width="100%"
+        height="200"
+      />
+
+      <div class="CArdHeader">
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.description | slice : 0 : 40 }} ...</p>
+        <div style="display: flex">
+          <del class="price">price :{{ item.price }} USD</del>
+          <p class="price">
+            {{
+              (-item.price * item.discountPercentage) / 100 + item.price
+                | number : "1.0-0"
+            }}
+            USD
+          </p>
+        </div>
+        <div class="CardContent">
+          <div style="display: flex">
+            <p>brand</p>
+            <p>{{ item.brand }}</p>
+          </div>
+          <div style="display: flex">
+            <p>category</p>
+            <p class="itemsOfCArd">{{ item.category }}</p>
+          </div>
+          <div style="display: flex">
+            <p>stock</p>
+            <p class="itemsOfCArd">{{ item.stock }}</p>
+          </div>
+          <div style="display: flex">
+            <p>rating</p>
+            <p class="itemsOfCArd">{{ item.rating }}</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button
+          type="submit"
+          value="1"
+          #cartVAlue
+          (click)="addTocard(cartVAlue.value)"
+          class="btn"
+        >
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="btnPagination">
+  <button
+    class="btnBextANdBAck"
+    value="10"
+    *ngIf="!desplayBAckBtn"
+    #number
+    (click)="backPage(number.value)"
+  >
+    back
+  </button>
+
+  <button
+    class="btnBextANdBAck"
+    value="10"
+    #number
+    *ngIf="!desplayNextBtn"
+    (click)="nextPage(number.value)"
+  >
+    next
+  </button>
+</div>

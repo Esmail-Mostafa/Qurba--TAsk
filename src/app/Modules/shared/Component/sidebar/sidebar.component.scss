@@ -1,0 +1,98 @@
+.parant .sidebar{
+    border: 2px solid rgb(198, 196, 196);
+    border-radius: 10px;
+    background: #FFFFFF;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    margin-top: 30px;
+    font-size: medium;
+ 
+}
+.SideBarContent{
+    margin-left: 8px;
+    margin-bottom: 6px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .parant .sidebar{
+        background: #FFFFFF;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 100%;
+        padding: 20px 0;
+        font-size: smaller;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .parant .sidebar{
+        background: #FFFFFF;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 140px;
+        height: 100%;
+        padding: 20px 0;
+        font-size: small;
+     
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .parant .sidebar{
+        background: #FFFFFF;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 100%;
+        padding: 20px 0;
+        font-size: medium;
+     
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .parant .sidebar{
+        background: #FFFFFF;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 225px;
+        height: 100%;
+        padding: 20px 0;
+        font-size: medium;
+     
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .parant .sidebar{
+        background: #FFFFFF;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 225px;
+        height: 100%;
+        padding: 20px 0;
+        font-size: medium;
+     
+    }
+}
+
+
+
+
+
+
+

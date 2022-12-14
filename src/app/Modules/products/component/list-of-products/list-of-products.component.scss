@@ -1,0 +1,112 @@
+.parint{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr) ;
+}
+//show product name in a header
+.Title  {
+padding:20px 50px;
+}
+.Title h3{
+padding: 15px 0;
+    
+}
+//button pagination
+.btnPagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+}
+.btnBextANdBAck{
+    width: 80px;
+    height: 30px;
+    background-color: #41CCCC;
+    border: 2px solid #41CCCC ;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+
+//prodect button in card
+.discountPercentage{
+background-color: #41CCCC;
+border-radius: 30px;
+width: 70px;
+opacity: 0.7;
+text-align: center;
+position: relative;
+top: 40px;
+left: 10px;
+}
+.btn{
+ width:100% ;
+height: 50px;
+ background: #41CCCC;
+ border: 2px solid #41CCCC;
+border-radius: 4px;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+//card body
+.price{
+    margin-right: 30px;
+    font-weight: 500;
+}
+.itemsOfCArd{
+    font-weight: 600;
+    margin-left: 30px;
+}
+.body{
+    
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cardBody{
+    line-height: 25px; 
+  
+    margin: 30px;
+    border: 2px solid white;
+    border-radius: 600px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .parint{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr) ;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .parint{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr) ;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .parint{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr) ;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .parint{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr) ;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .parint{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr) ;
+    }
+}

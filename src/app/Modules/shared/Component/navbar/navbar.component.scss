@@ -1,0 +1,43 @@
+nav{
+    border-bottom: 2px solid #696262 ;
+    height: 30px;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 20px;
+  }
+  li {
+    display: inline;
+  }
+ .Login{
+    float: right;
+    padding-right: 30px;
+    text-decoration: none;
+   
+  }
+  .Home{
+    text-decoration: none;
+    padding-left: 30px;
+  }
+  .seach{
+    float: right;;
+    padding-right: 30px;
+ 
+  }
+
+  li a{
+    color: #696262;
+  }
+  
+  li a:hover {
+   color: black;
+  }
+ .cart{
+  float: right;;
+  
+  background-color: rgb(237, 101, 101);
+  border-radius: 100px 100px;
+  text-align: center;
+  width: 20px;
+ }

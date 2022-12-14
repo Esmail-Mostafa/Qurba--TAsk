@@ -1,0 +1,23 @@
+<nav>
+  <ul>
+    <li class="cart">{{ cartNumber.length }}</li>
+    <li *ngIf="_AuthService.Islogin">
+      <a class="Home" routerLink="/list-of-products">Home</a>
+    </li>
+    <li *ngIf="!_AuthService.Islogin">
+      <a class="Login" routerLink="/Login">Login</a>
+    </li>
+    <li *ngIf="_AuthService.Islogin">
+      <a (click)="logOut()" class="Login" routerLink="/Login">LogOut</a>
+    </li>
+    <li *ngIf="_AuthService.Islogin" class="seach">
+      <input
+        type="search"
+        name=""
+        id=""
+        placeholder="search"
+        (keyup)="inputSeacrch($event)"
+      />
+    </li>
+  </ul>
+</nav>

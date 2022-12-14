@@ -1,0 +1,26 @@
+<div class="parant">
+
+  <div class="sidebar">
+    <div class="SideBarContent">
+      <input class="" #cat type="radio" value="all Products " id="" checked  name="categorys"
+      (change)="getCheckBoxCAteogry(cat.value)">
+      <label class="" for="">
+      All  
+      </label>
+    </div>
+    <div class="SideBarContent" *ngFor="let category of categorys">
+      <input
+      
+        type="radio"
+        #cat
+        id=""
+        value="{{ category }}"
+        (change)="getCheckBoxCAteogry(cat.value)"
+        name="categorys"
+      />
+      <label class="" for="">
+        {{ category }}
+      </label>
+    </div>
+  </div>
+</div>

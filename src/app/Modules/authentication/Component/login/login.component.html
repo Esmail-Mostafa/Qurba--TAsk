@@ -1,0 +1,35 @@
+<div>
+  <app-navbar></app-navbar>
+
+</div>
+<section class="parint">
+<div class="alertForm">
+  {{errors}}
+</div>
+  <div class="child">
+    <div class="header">
+      <div class="Logo">
+        <div class="logo2"></div>
+      </div>
+      <img src="" alt="" srcset="" />
+      <h2>Log in to your account</h2>
+      <p>Welcome back! Please enter your details.</p>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="Form()">
+      <div class="">
+        <label class="LabelInput" for="">user Name</label>
+        <input
+          formControlName="username"
+          type="text"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div>
+        <label class="LabelInput" for="">Password</label>
+        <input formControlName="password" type="password" />
+      </div>
+      <button [disabled]="loginForm.invalid" type="submit" class="">Sign in</button>
+    </form>
+  </div>
+</section>
